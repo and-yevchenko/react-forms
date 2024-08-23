@@ -1,5 +1,5 @@
 import './App.css'
-import { FormRegister } from './components/formRegister/formRegister'
+import { FormRegister } from './components/FormRegister/FormRegister'
 
 function App() {
 
