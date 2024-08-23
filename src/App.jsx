@@ -1,9 +1,12 @@
 import './App.css'
+import { FormRegister } from './components/formRegister/formRegister'
 
 function App() {
 
   return (
-    <div></div>
+    <section className='section'>
+      <FormRegister />
+    </section>
   )
 }
 
