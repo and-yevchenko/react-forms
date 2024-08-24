@@ -1,9 +1,8 @@
 import { useForm } from 'react-hook-form'
-import './FormRegister.css'
+import '../../assets/Form.css'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { formSchema } from './formSchema'
 import { Input } from '../Input/Input'
-// import { zodResolver } from '@hookform/resolvers/zod/src/zod.js'
 
 export const FormRegister = () => {
 
