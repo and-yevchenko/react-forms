@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form'
 import './FormRegister.css'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { formSchema } from './formSchema'
+import { Input } from '../Input/Input'
 // import { zodResolver } from '@hookform/resolvers/zod/src/zod.js'
 
 export const FormRegister = () => {
@@ -15,6 +16,7 @@ export const FormRegister = () => {
     } = useForm({
         defaultValues: {
             email: '',
+            name: '',
             password: '',
             confirm_password: '',
         },
@@ -31,6 +33,14 @@ export const FormRegister = () => {
                 <input id='email' {...register('email')}/>
                 <span>{errors.email?.message}</span>
             </div>
+
+            {/* Custom input */}
+            <Input 
+                register={register('name')}
+                label='Name'
+                errorMessage={errors.name?.message}
+            />
+
             <div>
                 <label htmlFor='password'>Password</label>
                 <input type="password" id='password' {...register('password')}/>
